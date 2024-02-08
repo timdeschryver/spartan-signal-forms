@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "spartan-forms": {
+    "spartan-signal-forms": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/spartan-forms",
+            "outputPath": "dist/spartan-signal-forms",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "spartan-forms:build:production"
+              "buildTarget": "spartan-signal-forms:build:production"
             },
             "development": {
-              "buildTarget": "spartan-forms:build:development"
+              "buildTarget": "spartan-signal-forms:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "spartan-forms:build"
+            "buildTarget": "spartan-signal-forms:build"
           }
         },
         "test": {
